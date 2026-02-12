@@ -23,7 +23,7 @@ header {
 
 .titulo {
     color: #088f25; /* Verde */
-    font-size: 4rem; /* Más grande */
+    font-size: clamp(1.5rem, 5vw, 3rem); /* se ajusta deacuerdo al tamaño de la pantalla */
     margin: 0;
 
     /* Borde blanco alrededor del texto */
@@ -74,4 +74,5 @@ header {
 .teclado button {
     padding: 10px;
     min-width: 35px;
+
 }
