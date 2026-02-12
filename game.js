@@ -1,35 +1,35 @@
 // Palabras básicas del SGSI
 const words = [
     {
-        word: "CONFIDENCIALIDAD",
+        word: "confidencialidad",
         hint: "Propiedad que asegura que solo personas autorizadas acceden a la información."
     },
     {
-        word: "INTEGRIDAD",
+        word: "integridad",
         hint: "Propiedad que garantiza que los datos no sean alterados sin autorización."
     },
     {
-        word: "DISPONIBILIDAD",
+        word: "disponibilidad",
         hint: "Propiedad que permite el acceso a la información cuando sea requerida."
     },
     {
-        word: "CIFRADO",
+        word: "cifrado",
         hint: "Técnica para transformar datos y proteger su contenido."
     },
     {
-        word: "AUTENTICACION",
+        word: "autenticacion",
         hint: "Proceso para verificar la identidad de un usuario."
     },
     {
-        word: "RESPALDO",
+        word: "respaldo",
         hint: "Copia de seguridad que permite recuperar datos."
     },
     {
-        word: "FIREWALL",
+        word: "firewall",
         hint: "Barrera de seguridad que controla el tráfico de red."
     },
     {
-        word: "MALWARE",
+        word: "malware",
         hint: "Software malicioso diseñado para dañar sistemas."
     }
 ];
@@ -124,3 +124,4 @@ document.getElementById("reset-btn").onclick = () => {
 };
 
 startGame();
+
