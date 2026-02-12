@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url("Imagen2.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Capa oscura semitransparente para mejorar lectura */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: -1;
+}
+
+header {
+    padding: 20px;
+}
+
+.titulo {
+    color: #088f25; /* Verde */
+    font-size: 4rem; /* Más grande */
+    margin: 0;
+
+    /* Borde blanco alrededor del texto */
+    text-shadow:
+        -2px -2px 0 hsl(110, 77%, 60%),
+         2px -2px 0 hsl(110, 77%, 60%),
+        -2px  2px 0 hsl(110, 77%, 60%),
+         2px  2px 0 hsl(110, 77%, 60%);
+}
+
+.subtitulo {
+    color: #088f25; /* Verde */
+    font-size: 2.4rem; /* Más grande */
+    margin: 0;
+
+    /* Borde blanco alrededor del texto */
+    text-shadow:
+        -2px -2px 0 hsl(110, 77%, 60%),
+         2px -2px 0 hsl(110, 77%, 60%),
+        -2px  2px 0 hsl(110, 77%, 60%),
+         2px  2px 0 hsl(110, 77%, 60%);
+}
+
+.ahorcado-container {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+.pista, .palabra {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+#word-display {
+    font-size: 2rem;
+    letter-spacing: 8px;
+}
+
+.teclado {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin: 20px;
+}
+
+.teclado button {
+    padding: 10px;
+    min-width: 35px;
+}
