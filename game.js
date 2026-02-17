@@ -123,5 +123,14 @@ document.getElementById("reset-btn").onclick = () => {
     startGame();
 };
 
+const progressText  = document.getElementById("progress-text");
+const progressCount = document.getElementById("progress-count"); // si usas el contador opcional
+
+
+// Inicializa el total de palabras en el contador (si usas el contador)
+if (progressCount) {
+  progressCount.textContent = `0 / ${words.length}`;
+};
+
 startGame();
 
