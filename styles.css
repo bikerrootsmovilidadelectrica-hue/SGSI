@@ -23,7 +23,7 @@ header {
 
 .titulo {
     color: #088f25; /* Verde */
-    font-size: clamp(1.5rem, 5vw, 3rem); /* se ajusta deacuerdo al tamaño de la pantalla */
+    font-size: 4rem; /* Más grande */
     margin: 0;
 
     /* Borde blanco alrededor del texto */
@@ -74,5 +74,41 @@ header {
 .teclado button {
     padding: 10px;
     min-width: 35px;
+}
 
+.progress-bar {
+  position: relative;
+  width: 80%;
+  max-width: 350px;
+  height: 22px;
+  background: #d1d5db;
+  border-radius: 10px;
+  margin: 12px auto 6px;
+  overflow: hidden;
+}
+
+#progress-fill {
+  position: relative;
+  width: 0%;
+  height: 100%;
+  background: #1b3c7a;      /* azul institucional */
+  transition: width .35s ease;
+  display: flex;             /* para centrar el texto */
+  align-items: center;
+  justify-content: center;
+}
+
+#progress-text {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-shadow: 0 1px 2px rgba(0,0,0,.4);
+  user-select: none;
+}
+
+.progress-meta {
+  margin-top: 4px;
+  font-size: .95rem;
+  color: #ffffff;  /* o el color que prefieras, en tu caso fondo oscuro */
+  opacity: .95;
 }
